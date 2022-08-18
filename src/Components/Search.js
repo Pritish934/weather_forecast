@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import spineer from '../assets/104.png'
+import Spinner from './Spinner'
+
 import Weather from './Weather'
 
 const Search = () => {
@@ -47,9 +48,8 @@ const Search = () => {
                     <Weather data={data} />
                 </div>
             ) : (
-                <div className='w-auto h-auto'>
-                    <div className='d-flex justify-content-center align-itmes-center'><img src={spineer} alt="spinner"/></div>
-                </div>
+                    <Spinner/>
+                    
             )}
 
         </div>
