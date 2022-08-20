@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.weather-box{
+  border-radius: 10px;
+  background-color: rgba(133, 224, 186, 0.459);
+}
