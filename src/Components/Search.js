@@ -17,7 +17,6 @@ const Search = () => {
         const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=afce546c7f1ad0c010e89bf69310431f`)
         const main_data = await data.json()
         setData(main_data)
-        console.log(city)
     }
     useEffect(() => {
         const fetchData = async () => {
@@ -29,8 +28,7 @@ const Search = () => {
             const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=afce546c7f1ad0c010e89bf69310431f`)
             const main_data = await data.json()
             setData(main_data)
-            console.log(main_data)
-            console.log(lat, lon)
+
         }
         fetchData()
     }, [lat, lon])
