@@ -12,12 +12,12 @@ const Weather = ({ data }) => {
             <div className='d-flex justify-content-center flex-column  m-5'>
                 <div className='d-flex justify-content-evenly flex-row my-3'>
                     <div className='fs-1 fw-bold my-5'>{data.name}</div>
-                    <div className='d-flex flex-column'>
+                    <div className='d-flex flex-column weather-box'>
                         <img style={{ height: '200px', width: '200px' }} src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt="wthr img" />
                         <span>{data.weather[0].description}</span>
                     </div>
                     <div className="date-time">
-                        <div className="day">{moment().format('dddd')}</div>
+                        <div className="day fs-1 fw-bold my-5">{moment().format('dddd')}</div>
                         <div className="date">{moment().format('LL')}</div>
                     </div>
 

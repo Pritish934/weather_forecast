@@ -36,7 +36,7 @@ const Search = () => {
     }, [lat, lon])
 
     return (
-        <div className='w-100'>
+        <div className='w-100 p-3' style={{backgroundImage:`url("https://images.unsplash.com/photo-1514477917009-389c76a86b68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80")`,backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
             {(typeof data != 'undefined' && data.cod == 200) ? (
                 <div>
                     <form className="d-flex m-5" role="search">
